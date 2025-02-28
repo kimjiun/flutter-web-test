@@ -26,42 +26,45 @@ class MyHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        children: [
-          Text(
-            "[서울엄마아빠택시]",
-            style: TextStyle(
-              fontSize: 30,
-              fontWeight: FontWeight.w700,
-              color: Colors.black
+      body: SingleChildScrollView(
+        scrollDirection: Axis.vertical,
+        child: Column(
+          children: [
+            Text(
+              "[서울엄마아빠택시]",
+              style: TextStyle(
+                fontSize: 30,
+                fontWeight: FontWeight.w700,
+                color: Colors.black
+              ),
             ),
-          ),
-          SizedBox(
-            height: 5,
-          ),
-          Text(
-            "2025-02-01 ~ 2025-12-15",
-            style: TextStyle(
-              fontSize: 15,
-              fontWeight: FontWeight.w400,
-              color: Colors.grey
+            SizedBox(
+              height: 5,
             ),
-          ),
-          SizedBox(
-            height: 10,
-          ),
-          Container(
-            width: 1000,
-            height: 3,
-            color: Colors.black,
-          ),
-          SizedBox(
-            height: 10,
-          ),
-          Image.network(
-              "https://storage.googleapis.com/papa-static-dev/images/system/banner/1739870125919_38b49434-9b1f-42cb-b49c-b98d3c9bd951.png"
-          )
-        ],
+            Text(
+              "2025-02-01 ~ 2025-12-15",
+              style: TextStyle(
+                fontSize: 15,
+                fontWeight: FontWeight.w400,
+                color: Colors.grey
+              ),
+            ),
+            SizedBox(
+              height: 10,
+            ),
+            Container(
+              width: 1000,
+              height: 3,
+              color: Colors.black,
+            ),
+            SizedBox(
+              height: 10,
+            ),
+            Image.network(
+                "https://storage.googleapis.com/papa-static-dev/images/system/banner/1739870125919_38b49434-9b1f-42cb-b49c-b98d3c9bd951.png"
+            )
+          ],
+        ),
       ),
     );
   }
