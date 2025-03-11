@@ -87,28 +87,30 @@ class MyHomePage extends StatelessWidget {
                   js.context.callMethod('doEventButtonClick');
                 },
                 style: TextButton.styleFrom(
-                  minimumSize: Size(double.infinity, 52),
-                  padding: EdgeInsets.zero,
                   backgroundColor: Color(0xFFE98791),
                   shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
                   splashFactory: NoSplash.splashFactory
                 ),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  children: [
-                    Text(
-                      '파파에서 엄마아빠택시 이용방법',
-                      textAlign: TextAlign.center,
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 17,
-                        fontFamily: 'Pretendard Variable',
-                        fontWeight: FontWeight.w600,
-                        overflow: TextOverflow.ellipsis
+                child: Container(
+                  width: double.infinity,
+                  height: 52,
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      Text(
+                        '파파에서 엄마아빠택시 이용방법',
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 17,
+                          fontFamily: 'Pretendard Variable',
+                          fontWeight: FontWeight.w600,
+                          overflow: TextOverflow.ellipsis
+                        ),
                       ),
-                    ),
-                  ],
+                    ],
+                  ),
                 ),
               ),
 
