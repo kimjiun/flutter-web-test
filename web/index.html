@@ -37,6 +37,15 @@
       font-family: 'Pretendard';
     }
   </style>
+
+  <script>
+    window.addEventListener("beforeunload", function (event) {
+      event.preventDefault();
+      event.returnValue = ""; // 새로고침 방지
+    });
+
+   history.replaceState(null, "", location.href);
+  </script>
 </head>
 <body>
   <script src="flutter_bootstrap.js" async></script>
