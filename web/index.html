@@ -34,5 +34,25 @@
 </head>
 <body>
   <script src="flutter_bootstrap.js" async></script>
+  <script>
+    function doEventButtonClick() {
+      var data = {
+          moveto: "vulnerableRegist"
+      };
+
+      // 안드로이드일 경우
+      if (typeof window.papa !== "undefined" && window.papa) {
+          if (window.papa.doEventButtonClick) {
+              window.papa.doEventButtonClick(JSON.stringify(data));
+          }
+      }
+      // iOS일 경우
+      else {
+          if (typeof window.webkit !== "undefined" && window.webkit.messageHandlers && window.webkit.messageHandlers.doEventButtonClick) {
+              webkit.messageHandlers.doEventButtonClick.postMessage(data);
+          }
+      }
+    }
+  </script>
 </body>
 </html>

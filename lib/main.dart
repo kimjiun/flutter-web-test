@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'dart:js' as js;
 
 void main() {
   runApp(const MyApp());
@@ -33,9 +34,9 @@ class MyHomePage extends StatelessWidget {
             Text(
               "[서울엄마아빠택시]",
               style: TextStyle(
-                fontSize: 30,
+                fontSize: 20,
                 fontWeight: FontWeight.w700,
-                color: Colors.black
+                color: Colors.black,
               ),
             ),
             SizedBox(
@@ -61,8 +62,18 @@ class MyHomePage extends StatelessWidget {
               height: 10,
             ),
             Image.network(
-                "https://storage.googleapis.com/papa-static-dev/images/system/banner/1739870125919_38b49434-9b1f-42cb-b49c-b98d3c9bd951.png"
-            )
+                "https://storage.googleapis.com/papa-static-live/images/system/banner/1741080442101_ba0ee0dd-14a6-4ea3-a427-82647c5f2867.png"
+            ),
+            SizedBox(
+              height: 20,
+            ),
+            ElevatedButton(
+              onPressed: () {
+                // JavaScript의 showAlert() 함수 호출
+                js.context.callMethod('doEventButtonClick');
+              },
+              child: Text("JavaScript 실행"),
+            ),
           ],
         ),
       ),
