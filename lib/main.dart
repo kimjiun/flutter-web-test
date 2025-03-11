@@ -27,18 +27,19 @@ class MyHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
       body: SingleChildScrollView(
         scrollDirection: Axis.vertical,
         child: Container(
+          color: Colors.white,
           padding: EdgeInsets.all(20),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
               Text(
-                "[서울 엄마아빠 택시]",
+                "[서울 엄마아빠택시 X 파파]",
                 style: TextStyle(
                   fontSize: 20,
+                  fontFamily: 'Pretendard Variable',
                   fontWeight: FontWeight.w600,
                   color: Colors.black,
                 ),
@@ -52,6 +53,7 @@ class MyHomePage extends StatelessWidget {
                 "2025-02-01 ~ 2025-12-15",
                 style: TextStyle(
                   fontSize: 14,
+                  fontFamily: 'Pretendard Variable',
                   fontWeight: FontWeight.w500,
                   color: Colors.grey
                 ),
