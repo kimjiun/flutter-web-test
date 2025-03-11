@@ -27,10 +27,10 @@ class MyHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       body: SingleChildScrollView(
         scrollDirection: Axis.vertical,
         child: Container(
-          color: Colors.white,
           padding: EdgeInsets.all(20),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -74,7 +74,7 @@ class MyHomePage extends StatelessWidget {
               ),
 
               Image.network(
-                  "https://storage.googleapis.com/papa-static-live/images/system/banner/1741080316479_a850d6a0-b1a5-4703-8c11-b48067eae99e.png"
+                  "https://storage.googleapis.com/papa-static-dev/images/system/banner/1741082024269_3aca5aa1-15c1-49fd-acfe-cf7c91643532.jpg"
               ),
 
               SizedBox(
