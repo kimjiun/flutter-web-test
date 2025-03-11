@@ -11512,9 +11512,8 @@ _.aN$=b
 _.c=_.a=null},
 a0M:function a0M(a,b){this.a=a
 this.b=b},
-tg:function tg(a,b,c){this.f=a
-this.ch=b
-this.a=c},
+tg:function tg(a,b){this.f=a
+this.a=b},
 nv:function nv(a,b,c,d,e,f,g,h,i,j,k,l,m,n,o){var _=this
 _.d=a
 _.e=b
@@ -40426,8 +40425,8 @@ f=A.di(a,B.vw,f).w
 f=f.f.d!==0?0:k
 m=s.w.wH(f)
 if(n.d<=0)l.a.toString
-f=l.a.ch
-return new A.IJ(!1,new A.tm(A.aaD(B.aS,A.xI(l.ch,new A.WV(j,l,!1,n,m,h,g),k),B.P,f,0,k,k,k,k,k,B.el),k),k)}}
+l.a.toString
+return new A.IJ(!1,new A.tm(A.aaD(B.aS,A.xI(l.ch,new A.WV(j,l,!1,n,m,h,g),k),B.P,i.go,0,k,k,k,k,k,B.el),k),k)}}
 A.WU.prototype={
 $0(){this.a.z=this.b},
 $S:0}
@@ -60575,8 +60574,8 @@ A.AJ.prototype={
 V(a){var s=null
 return new A.r5(new A.AK(s),"Flutter Demo",A.a76(s,A.a99(B.a0,s,s,B.CD),s),s)}}
 A.AK.prototype={
-V(a){var s=null,r=t.nA
-return new A.tg(new A.D0(B.bC,A.a9d(new A.yj(B.bC,B.cX,B.p4,B.ct,s,B.vd,s,0,A.b([A.a70("[\uc11c\uc6b8 \uc5c4\ub9c8\uc544\ube60 \ud0dd\uc2dc]",A.lP(s,s,B.m,s,s,s,s,s,s,s,s,20,s,s,B.fJ,s,s,!0,s,s,s,s,s,s,s,s),s),A.tK(s,5,s),A.a70("2025-02-01 ~ 2025-12-15",A.lP(s,s,B.CC,s,s,s,s,s,s,s,s,14,s,s,B.V,s,s,!0,s,s,s,s,s,s,s,s),s),A.tK(s,20,s),A.a9d(s,B.m,s,2,s,s,1/0),A.tK(s,20,s),new A.qC(A.al4(s,s,new A.ne("https://storage.googleapis.com/papa-static-live/images/system/banner/1741080316479_a850d6a0-b1a5-4703-8c11-b48067eae99e.png",1,s)),s),A.tK(s,40,s),new A.Du(new A.Ur(),s,s,s,A.am_(s,s,A.au(4293494673),s,s,s,s,s,s,s,s,s,s,s,new A.cT(A.a5C(8),B.bD),B.xa,s,s,s),s,s,!1,s,!0,A.tK(A.al7(A.b([A.a70("\ud30c\ud30c\uc5d0\uc11c \uc5c4\ub9c8\uc544\ube60\ud0dd\uc2dc \uc774\uc6a9\ubc29\ubc95",A.lP(s,s,B.j,s,s,s,s,s,"Pretendard Variable",s,s,17,s,s,B.fJ,s,s,!0,s,s,s,B.i6,s,s,s,s),B.eM)],r),B.cs,B.p2,B.p3,8),52,1/0),s),A.tK(s,20,s)],r),s),s,s,s,s,new A.bN(20,20,20,20),s),s),B.j,s)}}
+V(a){var s=null,r="Pretendard Variable",q=t.nA
+return new A.tg(new A.D0(B.bC,A.a9d(new A.yj(B.bC,B.cX,B.p4,B.ct,s,B.vd,s,0,A.b([A.a70("[\uc11c\uc6b8 \uc5c4\ub9c8\uc544\ube60\ud0dd\uc2dc X \ud30c\ud30c]",A.lP(s,s,B.m,s,s,s,s,s,r,s,s,20,s,s,B.fJ,s,s,!0,s,s,s,s,s,s,s,s),s),A.tK(s,5,s),A.a70("2025-02-01 ~ 2025-12-15",A.lP(s,s,B.CC,s,s,s,s,s,r,s,s,14,s,s,B.V,s,s,!0,s,s,s,s,s,s,s,s),s),A.tK(s,20,s),A.a9d(s,B.m,s,2,s,s,1/0),A.tK(s,20,s),new A.qC(A.al4(s,s,new A.ne("https://storage.googleapis.com/papa-static-live/images/system/banner/1741080316479_a850d6a0-b1a5-4703-8c11-b48067eae99e.png",1,s)),s),A.tK(s,40,s),new A.Du(new A.Ur(),s,s,s,A.am_(s,s,A.au(4293494673),s,s,s,s,s,s,s,s,s,s,s,new A.cT(A.a5C(8),B.bD),B.xa,s,s,s),s,s,!1,s,!0,A.tK(A.al7(A.b([A.a70("\ud30c\ud30c\uc5d0\uc11c \uc5c4\ub9c8\uc544\ube60\ud0dd\uc2dc \uc774\uc6a9\ubc29\ubc95",A.lP(s,s,B.j,s,s,s,s,s,r,s,s,17,s,s,B.fJ,s,s,!0,s,s,s,B.i6,s,s,s,s),B.eM)],q),B.cs,B.p2,B.p3,8),52,1/0),s),A.tK(s,20,s)],q),s),B.j,s,s,s,new A.bN(20,20,20,20),s),s),s)}}
 A.Ur.prototype={
 $0(){$.age().GD("doEventButtonClick")},
 $S:0}
