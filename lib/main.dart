@@ -95,10 +95,8 @@ class MyHomePage extends StatelessWidget {
                   width: double.infinity,
                   height: 52,
                   child: Row(
-                    mainAxisSize: MainAxisSize.min,
                     mainAxisAlignment: MainAxisAlignment.center,
                     crossAxisAlignment: CrossAxisAlignment.center,
-                    spacing: 8,
                     children: [
                       Text(
                         '파파에서 엄마아빠택시 이용방법',
