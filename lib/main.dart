@@ -27,11 +27,11 @@ class MyHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       body: SingleChildScrollView(
         scrollDirection: Axis.vertical,
         child: Container(
           padding: EdgeInsets.all(20),
-          color: Colors.white,
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
@@ -63,7 +63,7 @@ class MyHomePage extends StatelessWidget {
 
               Container(
                 width: double.infinity,
-                height: 3,
+                height: 2,
                 color: Colors.black,
               ),
 
@@ -72,26 +72,11 @@ class MyHomePage extends StatelessWidget {
               ),
 
               Image.network(
-                  "https://storage.googleapis.com/papa-static-live/images/system/banner/1741080442101_ba0ee0dd-14a6-4ea3-a427-82647c5f2867.png"
+                  "https://storage.googleapis.com/papa-static-live/images/system/banner/1741080316479_a850d6a0-b1a5-4703-8c11-b48067eae99e.png"
               ),
 
               SizedBox(
-                height: 32,
-              ),
-
-              Text(
-                '※ 본 이벤트는 당사 사정에 따라 내용이 변경될 수 있습니다.',
-                style: TextStyle(
-                  color: Color(0xFF13052C),
-                  fontSize: 13,
-                  fontFamily: 'Pretendard Variable',
-                  fontWeight: FontWeight.w500,
-                  height: 1.60,
-                ),
-              ),
-
-              SizedBox(
-                height: 43,
+                height: 40,
               ),
 
               TextButton(
@@ -104,9 +89,9 @@ class MyHomePage extends StatelessWidget {
                   shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
                   splashFactory: NoSplash.splashFactory
                 ),
-                child: Container(
+                child: SizedBox(
                   width: double.infinity,
-                  padding: const EdgeInsets.symmetric(vertical: 18),
+                  height: 52,
                   child: Row(
                     mainAxisSize: MainAxisSize.min,
                     mainAxisAlignment: MainAxisAlignment.center,
@@ -127,6 +112,10 @@ class MyHomePage extends StatelessWidget {
                     ],
                   ),
                 ),
+              ),
+
+              SizedBox(
+                height: 20,
               ),
             ],
           ),
