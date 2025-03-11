@@ -29,52 +29,107 @@ class MyHomePage extends StatelessWidget {
     return Scaffold(
       body: SingleChildScrollView(
         scrollDirection: Axis.vertical,
-        child: Column(
-          children: [
-            Text(
-              "[서울엄마아빠택시]",
-              style: TextStyle(
-                fontSize: 20,
-                fontWeight: FontWeight.w700,
+        child: Container(
+          padding: EdgeInsets.all(20),
+          color: Colors.white,
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              Text(
+                "[서울 엄마아빠 택시]",
+                style: TextStyle(
+                  fontSize: 20,
+                  fontWeight: FontWeight.w600,
+                  color: Colors.black,
+                ),
+              ),
+
+              SizedBox(
+                height: 5,
+              ),
+
+              Text(
+                "2025-02-01 ~ 2025-12-15",
+                style: TextStyle(
+                  fontSize: 14,
+                  fontWeight: FontWeight.w500,
+                  color: Colors.grey
+                ),
+              ),
+
+              SizedBox(
+                height: 20,
+              ),
+
+              Container(
+                width: double.infinity,
+                height: 3,
                 color: Colors.black,
               ),
-            ),
-            SizedBox(
-              height: 5,
-            ),
-            Text(
-              "2025-02-01 ~ 2025-12-15",
-              style: TextStyle(
-                fontSize: 15,
-                fontWeight: FontWeight.w400,
-                color: Colors.grey
+
+              SizedBox(
+                height: 20,
               ),
-            ),
-            SizedBox(
-              height: 10,
-            ),
-            Container(
-              width: 1000,
-              height: 3,
-              color: Colors.black,
-            ),
-            SizedBox(
-              height: 10,
-            ),
-            Image.network(
-                "https://storage.googleapis.com/papa-static-live/images/system/banner/1741080442101_ba0ee0dd-14a6-4ea3-a427-82647c5f2867.png"
-            ),
-            SizedBox(
-              height: 20,
-            ),
-            ElevatedButton(
-              onPressed: () {
-                // JavaScript의 showAlert() 함수 호출
-                js.context.callMethod('doEventButtonClick');
-              },
-              child: Text("JavaScript 실행"),
-            ),
-          ],
+
+              Image.network(
+                  "https://storage.googleapis.com/papa-static-live/images/system/banner/1741080442101_ba0ee0dd-14a6-4ea3-a427-82647c5f2867.png"
+              ),
+
+              SizedBox(
+                height: 32,
+              ),
+
+              Text(
+                '※ 본 이벤트는 당사 사정에 따라 내용이 변경될 수 있습니다.',
+                style: TextStyle(
+                  color: Color(0xFF13052C),
+                  fontSize: 13,
+                  fontFamily: 'Pretendard Variable',
+                  fontWeight: FontWeight.w500,
+                  height: 1.60,
+                ),
+              ),
+
+              SizedBox(
+                height: 43,
+              ),
+
+              TextButton(
+                onPressed: () {
+                  // JavaScript의 showAlert() 함수 호출
+                  js.context.callMethod('doEventButtonClick');
+                },
+                style: TextButton.styleFrom(
+                  backgroundColor: Color(0xFFE98791),
+                  shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
+                  splashFactory: NoSplash.splashFactory
+                ),
+                child: Container(
+                  width: double.infinity,
+                  padding: const EdgeInsets.symmetric(vertical: 18),
+                  child: Row(
+                    mainAxisSize: MainAxisSize.min,
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    spacing: 8,
+                    children: [
+                      Text(
+                        '파파에서 엄마아빠택시 이용방법',
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 17,
+                          fontFamily: 'Pretendard Variable',
+                          fontWeight: FontWeight.w600,
+                          overflow: TextOverflow.ellipsis
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            ],
+          ),
         ),
       ),
     );
